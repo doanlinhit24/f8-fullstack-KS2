@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EXE3-Day2</title>
+        <style>
+            .writeMessage {
+                margin-top: 20px;
+                width: 60%;
+                height: 200px;
+            }
+            .writeMessage::placeholder {
+                position: absolute;
+                top: 6px;
+            }
+            .btn {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <h1 class="heading lv1">
+                    Get in touch with us by filling contact form below
+                </h1>
+                <div class="form">
+                    <div>
+                        <input
+                            type="text"
+                            placeholder="* Enter your full name"
+                        />
+                        <input type="text" placeholder="* Enter your subject" />
+                    </div>
+                    <div style="margin-top: 20px">
+                        <input
+                            type="text"
+                            placeholder="* Enter your email address"
+                        />
+                    </div>
+                    <div>
+                        <input
+                            type="text"
+                            placeholder="* Your message here"
+                            class="writeMessage"
+                        />
+                    </div>
+                </div>
+                <button class="btn">Send message</button>
+                <span>* Please fill all require form field, thanks!</span>
+            </div>
+        </main>
+    </body>
+</html>
