@@ -85,19 +85,23 @@ a {
     gap: 15px 0px;
 }
 
+.contact-right input, textarea{
+    width: 800px;
+    font-size: 1.4rem;
+}
+
 .contact-right input {
-    height: 35px;
+    height: 40px;
 }
 
-.contact-right .message {
-    position: relative;
-    height: 90px;
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    border: none;
 }
 
-.contact-right .message::placeholder {
-    position: absolute;
-    top:4px;
-}
+
+
 
 
 

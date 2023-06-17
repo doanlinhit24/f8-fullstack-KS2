@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Day3</title>
+    </head>
+    <body>
+        <form action="" method="get">
+            <div>
+                <label for="email">Email</label>
+                <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                />
+            </div>
+            <div>
+                <label for="password">password</label>
+                <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    placeholder="password"
+                />
+            </div>
+            <div>
+                <label for="age">age</label>
+                <input
+                    id="age"
+                    type="number"
+                    name="age"
+                    placeholder="age"
+                    min="2"
+                    max="50"
+                    step="2"
+                />
+            </div>
+            <div>
+               <label>Gender</label>
+               <label><input type="radio" name="gender" value="0">No determine</label>
+               <label><input type="radio" name="gender" value="1">Male</label>
+               <label><input type="radio" name="gender" value="2">Female</label>
+            </div>
+            <div>
+                <label>What is your subject?</label>
+                <label><input type="checkbox" name="source" value="unknown">don't know</label>
+                <label><input type="checkbox" name="source" value="math">Math</label>
+                <label><input type="checkbox" name="source" value="physical">Physical</label>
+             </div>
+             <div>
+                <label for="avatar">Choose File</label>
+                <input id="avatar" type="file" name="avatar">
+             </div>
+             <div>
+                <label for="birthday">Date</label>
+                <input id="birthday" type="date" name="birthday">
+             </div>
+             <div>
+                <label for="price">Price</label>
+                <input id="price" type="range" name="price" value="0">
+             </div>
+             <div class="div">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message"></textarea>
+             </div>
+             <div class="div">
+                <label for="provinces">Provinces</label>
+                <select name="provinces" id="provinces">
+                    <option value="" hidden>Select Province</option>
+                    <optgroup label="Mien Bac">
+                        <option value="1">Ha Noi</option>
+                        <option value="2">Hai Phong</option>
+                    </optgroup>
+                    <option value="3">Ha Hong</option>
+                </select>
+             </div>
+            <button type="submit">Sign in</button>
+        </form>
+    </body>
+</html>

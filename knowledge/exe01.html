@@ -5,48 +5,65 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <style>
+            table thead {
+                background-color: #333;
+                color: #fff;
+            }
+            table tbody {
+                background-color: red;
+                color: yellowgreen;
+            }
+        </style>
     </head>
     <body>
         <table width="100%" border="1" cellpadding="10" cellspacing="0">
-            <tr>
-                <th colspan="2">Thông tin sản phẩm</th>
-                <th rowspan="2">SL</th>
-                <th rowspan="2">Đơn giá</th>
-                <th rowspan="2">Thành tiền</th>
-                <!-- <td>Column 5</td> -->
-            </tr>
-            <tr>
-                <!-- <td>Column 1</td> -->
-                <th>Hình ảnh</th>
-                <th>Sản phẩm</th>
-                <!-- <td>Column 4</td> -->
-                <!-- <td>Column 5</td> -->
-            </tr>
-            <tr>
-                <td>Ảnh</td>
-                <td >Túi golf đựng gậy cao cấp nữ Honma CB2133 3 sao<br/>
-                     Mã: HMT12230
-                </td>
-                <td >1</td>
-                <td >14,070,000</td>
-                <td>14,070,000</td>
-            </tr>
-            <tr>
-                <td colspan="2"><b>Cộng</b></td>
-                <td>1</td>
-                <td >14,070,000</td>
-                <td><b>14,070,00</b></td>
-                <!-- <td>Column 5</td> -->
-            </tr>
-            <tr>
-                <!-- <td>Column 1</td> -->
-                <td colspan="4"><b>Tổng cộng</b></td>
-                <!-- <td>Column 2</td> -->
-                <!-- <td>Column 3</td> -->
-                <!-- <td>Column 4</td> -->
-                <td><b>14,070,00</b></td>
-                
-            </tr>
+            <thead>
+                <tr>
+                    <th colspan="2">Thông tin sản phẩm</th>
+                    <th rowspan="2">SL</th>
+                    <th rowspan="2">Đơn giá</th>
+                    <th rowspan="2">Thành tiền</th>
+                    <!-- <td>Column 5</td> -->
+                </tr>
+                <tr>
+                    <!-- <td>Column 1</td> -->
+                    <th>Hình ảnh</th>
+                    <th>Sản phẩm</th>
+                    <!-- <td>Column 4</td> -->
+                    <!-- <td>Column 5</td> -->
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Ảnh</td>
+                    <td >Túi golf đựng gậy cao cấp nữ Honma CB2133 3 sao<br/>
+                         Mã: HMT12230
+                    </td>
+                    <td >1</td>
+                    <td >14,070,000</td>
+                    <td>14,070,000</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>Cộng</b></td>
+                    <td>1</td>
+                    <td >14,070,000</td>
+                    <td><b>14,070,00</b></td>
+                    <!-- <td>Column 5</td> -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- <td>Column 1</td> -->
+                    <td colspan="4"><b>Tổng cộng</b></td>
+                    <!-- <td>Column 2</td> -->
+                    <!-- <td>Column 3</td> -->
+                    <!-- <td>Column 4</td> -->
+                    <td><b>14,070,00</b></td>
+                    
+                </tr>
+            </tfoot>
         </table>
     </body>
 </html>
