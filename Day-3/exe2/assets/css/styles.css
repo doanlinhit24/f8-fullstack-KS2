@@ -10,3 +10,68 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
 }
+
+/* Common */
+.box {
+    width: 65px;
+    height: 65px;
+    background-color: green;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 65px;
+    font-size: 3.5rem;
+}
+
+.container {
+    width: 1110px;
+    margin: 50px auto;
+}
+
+
+.desc {
+    width: 200px;
+    font-style: italic;
+    color: grey;
+}
+
+/* main */
+.info {
+    display: flex;
+    gap: 0 20px;
+}
+
+.info__group {
+    flex: 1;
+}
+
+.info__group__item {
+    margin-top: 70px;
+    display: flex;
+    gap: 0 10px;
+}
+
+.info .author {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.heading {
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.heading::after {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: blue;
+}

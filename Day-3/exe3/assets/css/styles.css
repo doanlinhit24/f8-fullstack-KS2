@@ -1,0 +1,25 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+/* Common */
+
+.container {
+    width: 1110px;
+    margin: 50 auto;
+    max-width: calc(100% - 48px);
+}
+
+/* main */
+
+label {
+    
+}

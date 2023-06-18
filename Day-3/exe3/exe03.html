@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX3-Day3</title>
+</head>
+<body>
+    <main>
+        <d class="container">
+            <form action="" method="get">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div>
+                    <label for="city">City of Employment:</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div >
+                    <label for="web">Web server:</label>
+                    <select name="web" id="web">
+                        <option value="0" hidden>-Choose a server-</option>
+                        <option value="VietNam">Viet Nam</option>
+                        <option value="Japan">Japan</option>
+                    </select>
+                </div>
+                <div >
+                    <label>Please specify your role:</label>
+                    <label><input type="radio" name="role" value="admin">Admin</label>
+                    <label><input type="radio" name="role" value="engineer">Engineer</label>
+                    <label><input type="radio" name="role" value="manager">Manager</label>
+                    <label><input type="radio" name="role" value="guest">Guest</label>
+                </div>
+                <div >
+                    <label>Single Sign-on to the following:</label>
+                    <label><input type="checkbox" name="Mail" value="Mail">Mail</label>
+                    <label><input type="checkbox" name="Payroll" value="Payroll">Payroll</label>
+                    <label><input type="checkbox" name="Self-servivce" value="Self-servivce">Self-servivce</label>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Login</button>
+                    <button type="rest" class="btn">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
