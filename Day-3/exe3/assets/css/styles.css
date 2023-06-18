@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
 }
 /* Common */
@@ -19,7 +19,3 @@ body {
 }
 
 /* main */
-
-label {
-    
-}
