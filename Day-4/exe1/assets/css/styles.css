@@ -1,0 +1,78 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Commom */
+.container {
+    width: 1110px;
+    margin: 50px auto;
+    max-width: calc(100% - 48px);
+}
+
+/* main */
+.form {
+    background: #5656b9;
+    padding: 30px;
+}
+
+.form .heading {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.heading span {
+    color: #F86F03;
+}
+
+.form .desc {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 15px;
+    width: 550px;
+}
+
+.form .btn-cta {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    margin-top: 10px;
+}
+
+.form .btn {
+    padding: 10px 15px;
+    background-color: yellow;
+    border: 1px solid yellow;
+}
+
+.form input {
+    padding: 10px 15px;
+}
+
+/* .form:hover {
+    opacity: 0.9;
+} */
+
+.form:hover input::placeholder {
+    color: #F86F03;
+}
+
+.form:hover input {
+    background: #ddd;
+    border: 2px solid #ddd;
+}
+
+.form:hover .btn {
+    background: #F86F03;
+    border: 1px solid #F86F03;
+    color: #fff;
+}
