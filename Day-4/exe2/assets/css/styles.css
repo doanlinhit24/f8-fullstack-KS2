@@ -1,0 +1,79 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Bebas Neue', sans-serif;
+    /* font-family: 'Alfa Slab One', sans-serif; */
+}
+
+/* Common */
+.container {
+    width: 1110px;
+    margin: 50px auto;
+    max-width: calc(100% - 48px);
+}
+
+input,
+button {
+    width: 50%;
+    height: 60px;
+}
+
+input {
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000;
+    padding-left: 20px;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+.heading {
+    color: brown;
+    text-align: center;
+}
+
+/* main */
+
+.btn {
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    background: red;
+    border: red;
+}
+
+.heading.lv2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+}
+
+.heading.lv1 {
+    margin-top: 30px;
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 5rem;
+}
+
+.form {
+    margin-top: 25px;
+}
+
+.row-info,
+.row-time,
+.row-number {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+
+
