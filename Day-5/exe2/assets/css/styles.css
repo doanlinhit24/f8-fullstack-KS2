@@ -1,0 +1,61 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 50px auto;
+    width: 1110px;
+    max-width: calc(100% - 48px);
+}
+
+.info__item {
+    margin-top: 20px;
+}
+
+input {
+    display: none;
+}
+
+.desc {
+    margin-top: 10px;
+    line-height: 1.2;
+    display: none;
+}
+
+.info__item label {
+    display: inline-block;
+    width: 100%;
+    background:orangered;
+    padding: 10px 15px;
+}
+
+label {
+    color: #fff;
+}
+
+
+.sub {
+    display: none;
+}
+
+.info__item input:checked ~ label .sub {
+    display: inline-block;
+}
+
+.info__item input:checked ~ label .add {
+    display: none;
+}
+
+.info__item input:checked ~ .desc {
+    display: block;
+}
+
