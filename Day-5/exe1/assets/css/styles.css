@@ -1,0 +1,162 @@
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color: #757575;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+}
+/* Common */
+.container {
+    margin: 50px auto;
+    width: 1110px;
+    max-width: calc(100% - 48px);
+}
+
+.heading {
+    font-family: 'Lobster', cursive;
+    font-size: 4.5rem;
+}
+
+.desc {
+    margin-top: 30px;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.desc span {
+    color: red;
+}
+
+.form input {
+    width: 100%;
+    padding: 8px 10px;
+    height: 40px;
+}
+
+.form .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.btn {
+    width: 100px;
+    padding: 6px 8px;
+    color: #ffffff;
+    background: red;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+select option {
+    color: var(--primary-color);
+}
+
+.fa-star, 
+.fa-xmark {
+    position: absolute;
+    color: var(--primary-color);
+    top: 15px;
+    right: 10px;
+    font-size: 1rem;
+}
+
+/* main */
+.form {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    gap: 0;
+}
+
+select {
+    width: 100%;
+}
+
+.form-message {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.form-message textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-message .icon {
+    padding: 10px;
+    height: 176px;
+    width: 40px;
+    background: var(--primary-color);
+    color: #ffffff;
+}
+
+.action {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.action label {
+    color: var(--primary-color);
+}
+
+/* Animation */
+
+.form:hover .icon {
+    background: #000;
+    border: 1px solid #000;
+}
+
+
+.form:hover input {
+    border: 1px solid #000;
+}
+
+.form-message:hover .icon {
+    background: #000;
+    border: 1px solid #000;
+}
+
+.form-message:hover textarea {
+    border: 1px solid #000;
+}
+
+i.fa-xmark {
+    display: none;
+    font-size: 1.2rem;
+}
+
+input:focus ~ i.fa-star {
+    display: none;
+}
+
+input:focus ~ i.fa-xmark {
+    display: block;
+}
+
+textarea:focus ~ i.fa-star {
+    display: none;
+}
+
+textarea:focus ~ i.fa-xmark {
+    display: block;
+}
+
+
