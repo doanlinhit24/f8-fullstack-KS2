@@ -1,0 +1,143 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Common */
+.container {
+    width: 1110px;
+    margin: 50px auto;
+    max-width: calc(100% - 48px);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 8px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.fa-chevron-down {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* main */
+#nav {
+    border: 1px solid rgb(139, 135, 135);
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+#nav li {
+    cursor: pointer;
+}
+
+#nav > li:last-child {
+    margin-left: auto;
+    border-left: 1px solid rgb(139, 135, 135);
+    border-right: none;
+}
+
+#nav > li {
+    position: relative;
+    padding: 5px;
+    border-right: 1px solid rgb(139, 135, 135);
+}
+
+#nav > li  .nav-item-title a {
+    color: #333;
+}
+
+
+.subnav li {
+    padding: 6px;
+    width: 200px;
+}
+
+.subnav li a {
+    color: #333;
+}
+
+.subnav {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 0 7px #333;
+    display: none;
+}
+
+.subnav::before {
+    position: absolute;
+    top: -10px;
+    left: 15%;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #fff;
+    /* box-shadow: 0 0 8px #333; */
+}
+
+
+.subnav > li:hover {
+    background: blue;
+}
+
+#nav > li:hover .nav-item-title {
+    /* outline: 5px solid blue; */
+    background: blue;
+}
+
+
+#nav > li:hover .nav-item-title > a,
+#nav > li:hover .icon ,
+#nav > li:hover .fa-chevron-down {
+    color: #fff;
+}
+
+.subnav li:hover a,
+.subnav li:hover .fa-check {
+    color: #fff;
+}
+
+#nav > li:hover .subnav, 
+#nav > li:focus-within .subnav {
+    display: block;
+}
+
+.subnav li {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.nav-item-title {
+    display: flex;
+    align-items: center;
+    margin: 3px 4px;
+    padding: 0 10px;
+}
+
+
+
