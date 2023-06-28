@@ -1,0 +1,194 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.6rem;
+}
+
+.container {
+    background-color: #ff574d;
+    background-image: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg);
+    background-position: 0 bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* Common */
+
+.logo {
+    width: 40px;
+    height: 40px;
+    color: #ff574d;
+    background: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #5e5d5d;
+}
+
+/* main */
+
+.info {
+    display: flex;
+}
+
+/* info-introduce */
+
+.info-introduce {
+    padding: 80px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #ff574d;
+}
+
+.info-introduce .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+}
+
+.info-introduce .title .heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.info-introduce .desc {
+    margin-top: 30px;
+    width: 300px;
+    color: #fff;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.info-introduce .btn-action {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-introduce .btn {
+    width: 150px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: #ff574d;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.group-icon {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    border: 4px;
+    color: #fff;
+    background: #5e5d5d;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* form */
+.form {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #fff;
+    padding: 40px 35px;
+}
+
+.form .title {
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.form .title span {
+    color: #ff574d;
+}
+
+.form .title::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 45px;
+    background: #fd78719a;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form input:not([type="checkbox"]) {
+    margin-top: 20px;
+    height: 45px;
+    width: 100%;
+    padding: 5px 15px;
+}
+
+.form input {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 8px #ddd;
+}
+
+.action {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form label {
+    color: #5e5d5d;
+}
+
+.form .btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px 10px;
+    color: #fff;
+    background: #ff574d;
+    border: 1px solid #ff574d;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.form .desc {
+    margin-top: 20px;
+    color: #5e5d5d;
+    text-align: center;
+}
