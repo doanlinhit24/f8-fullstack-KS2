@@ -93,33 +93,33 @@ a {
 }
 
 .item-1 .icon {
-    background: #ff8989;
-    box-shadow: 0 0 12px #ff8989;
+    background: linear-gradient(241deg, #ff9a3b 0%, #ff2525 60%);
+    box-shadow: 0 0 12px #ff0000e3;
 }
 
 .item-2 .icon {
-    background-color: #00DFA2;
-    box-shadow: 0 0 12px #00DFA2;
+    background: linear-gradient(90deg, #20a824 0%, #80bad0 98%);
+    box-shadow: 0 0 12px #20a824;
 }
 
 .item-3 .icon {
-    background: rgb(255, 172, 28);
-    box-shadow: 0 0 12px rgb(255, 172, 28);
+    background: linear-gradient(62deg, #da7232 0%, #f7e068 100%);
+    box-shadow: 0 0 12px #da7232;
 }
 
 .item-4 .icon {
-    background: #30A2FF;
-    box-shadow: 0 0 12px #30A2FF;
+    background: linear-gradient(295deg, #b7bcff 0%, #372bff 98%);
+    box-shadow: 0 0 12px #b7bcff;
 }
 
 .item-5 .icon {
-    background: #A459D1;
-    box-shadow: 0 0 12px #A459D1;
+    background: linear-gradient(43deg, #a420ff 0%, #977bff 100%);
+    box-shadow: 0 0 12px #a420ff;
 }
 
 .item-6 .icon {
-    background: #8EAC50;
-    box-shadow: 0 0 12px #8EAC50;
+    background: linear-gradient(90deg, #20a824 0%, #69ff83 97%);
+    box-shadow: 0 0 12px #20a824;
 }
 
 
