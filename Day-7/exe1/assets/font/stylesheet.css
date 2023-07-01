@@ -1,0 +1,190 @@
+/* ==================== SFU =================== */
+@font-face {
+    font-family: 'SFU AGBuchStencilBQ';
+    src: url('SFU/SFUAGBuchStencilBQMedium.woff2') format('woff2'),
+        url('SFU/SFUAGBuchStencilBQMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU AmericanType';
+    src: url('SFU/SFUAmericanTypeMedium.woff2') format('woff2'),
+        url('SFU/SFUAmericanTypeMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Angie';
+    src: url('SFU/SFUAngieBlack.woff2') format('woff2'),
+        url('SFU/SFUAngieBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU AdineKirnberg';
+    src: url('SFU/SFUAdineKirnberg.woff2') format('woff2'),
+        url('SFU/SFUAdineKirnberg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Ariston';
+    src: url('SFU/SFUAriston.woff2') format('woff2'),
+        url('SFU/SFUAriston.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Angie';
+    src: url('SFU/SFUAngie.woff2') format('woff2'),
+        url('SFU/SFUAngie.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Angie';
+    src: url('SFU/SFUAngieBold.woff2') format('woff2'),
+        url('SFU/SFUAngieBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Angie';
+    src: url('SFU/SFUAngieItalic.woff2') format('woff2'),
+        url('SFU/SFUAngieItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU AmericanType';
+    src: url('SFU/SFUAmericanTypeBold.woff2') format('woff2'),
+        url('SFU/SFUAmericanTypeBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU BalletEngraved';
+    src: url('SFU/SFUBalletEngraved.woff2') format('woff2'),
+        url('SFU/SFUBalletEngraved.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU BaskervilleBook';
+    src: url('SFU/SFUBaskervilleBook.woff2') format('woff2'),
+        url('SFU/SFUBaskervilleBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU BaskervilleBook';
+    src: url('SFU/SFUBaskervilleBookMediumItalic.woff2') format('woff2'),
+        url('SFU/SFUBaskervilleBookMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU BaskervilleBook';
+    src: url('SFU/SFUBaskervilleBookMedium.woff2') format('woff2'),
+        url('SFU/SFUBaskervilleBookMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU BaskervilleBook';
+    src: url('SFU/SFUBaskervilleBookItalic.woff2') format('woff2'),
+        url('SFU/SFUBaskervilleBookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Auchon';
+    src: url('SFU/SFUAuchon.woff2') format('woff2'),
+        url('SFU/SFUAuchon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Bembo';
+    src: url('SFU/SFUBemboExtraBoldItalic.woff2') format('woff2'),
+        url('SFU/SFUBemboExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Bembo';
+    src: url('SFU/SFUBemboExtraBold.woff2') format('woff2'),
+        url('SFU/SFUBemboExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Bembo';
+    src: url('SFU/SFUBemboItalic.woff2') format('woff2'),
+        url('SFU/SFUBemboItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Bembo';
+    src: url('SFU/SFUBemboBoldItalic.woff2') format('woff2'),
+        url('SFU/SFUBemboBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Bembo';
+    src: url('SFU/SFUBemboBold.woff2') format('woff2'),
+        url('SFU/SFUBemboBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Belle';
+    src: url('SFU/SFUBelle.woff2') format('woff2'),
+        url('SFU/SFUBelle.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
