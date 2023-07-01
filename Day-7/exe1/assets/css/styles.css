@@ -30,9 +30,9 @@ body {
     position: relative;
     margin-left: 200px;
     padding: 25px 20px;
-    opacity: 0.85;
+    /* opacity: 0.85; */
     width: 550px;
-    background: #fff;
+    background: #ffffffcc;
     border-radius: 4px;
 }
 
