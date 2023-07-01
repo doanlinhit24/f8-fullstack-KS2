@@ -72,16 +72,29 @@ a {
     font-weight: 600;
 }
 
+/* .profile-navbar {
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: flex-end;
+} */
+
 nav {
-    margin-left: 75%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar {
-    position: relative;
+    /* position: relative; */
+    margin-right: 70px;
     margin-top: 10px;
     display: flex;
     align-items: center;
     gap: 0 25px;
+}
+
+.navbar li {
+    position: relative;
 }
 
 .navbar li a {
@@ -89,16 +102,21 @@ nav {
     font-weight: 600;
 }
 
-.navbar li.active a {
-    color: rgba(255, 0, 0, 0.7);
+a::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 0;
+    left: 0;
+    top: 30px;
+    background: rgba(255, 0, 0, 0.671);
 }
 
-.navbar li.active:after {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    content: "";
-    height: 3px;
-    width: 80px;
-    background: rgba(255, 0, 0, 0.7);
+li:hover a {
+    color: rgba(255, 0, 0, 0.671);
+}
+
+li:hover a::after {
+    width: 100%;
 }
