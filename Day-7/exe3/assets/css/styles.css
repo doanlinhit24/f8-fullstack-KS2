@@ -15,6 +15,7 @@ img {
     width: 370px;
     height: 210px;
     display: block;
+    z-index: -1;
 }
 
 img:hover {
@@ -102,6 +103,7 @@ a {
     color: #efefef;
     position: absolute;
     bottom: 20px;
+    /* z-index: 1; */
 }
 
 .info .desc span {
@@ -116,6 +118,7 @@ a {
     font-weight: 600;
     position: absolute;
     top: 15px;
+    /* z-index: 1; */
 }
 
 .navbar {
