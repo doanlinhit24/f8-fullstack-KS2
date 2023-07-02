@@ -1,0 +1,134 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    /* outline: 0; */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    width: 370px;
+    height: 210px;
+    display: block;
+}
+
+body {
+    font-family: "Asap", sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Common */
+.container {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin: 50px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background: #ddd;
+    min-width: 60px;
+    padding: 8px 15px;
+    text-align: center;
+    border-radius: 999px;
+    font-weight: 600;
+    color: #000;
+}
+
+.btn span {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: rgba(255, 166, 0, 0.774);
+}
+
+.heading {
+    width: 700px;
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* main */
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.seperate {
+    height: 1px;
+    width: 100%;
+    background: #ddd;
+}
+
+.info {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    /* margin-top: 20px; */
+}
+
+.info .row-2 {
+    margin-top: 20px;
+}
+
+.info .images {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+    position: relative;
+}
+
+.info .desc {
+    margin-left: 15px;
+    font-size: 1.4rem;
+    color: #efefef;
+    position: absolute;
+    bottom: 20px;
+}
+
+.info .desc span {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.title {
+    margin-left: 15px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 15px;
+}
+
+.navbar {
+    position: relative;
+    margin-top: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 0 10px;
+}
+
+.navbar ul li + li .info {
+    display: none;
+}
+
+.btn:focus ~ .info {
+    display: block;
+}
+
+
