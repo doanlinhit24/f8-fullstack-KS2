@@ -1,0 +1,152 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.6rem;
+    background-image: url(https://images.unsplash.com/photo-1587893859371-f4d438436b0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80S);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Common */
+
+.container {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin: 50px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    height: 30px;
+}
+
+/* main */
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar > ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar > ul > li {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.navbar > ul > li .icon {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.navbar ul > li > a {
+    color: #000;
+    font-weight: 600;
+    padding: 10px 5px;
+    /* background: blue; */
+}
+
+.navbar > ul > li:hover > a {
+    color: #ddd;
+}
+
+.fa-circle-exclamation,
+.fa-magnifying-glass {
+    margin-left: 20px;
+}
+
+.subnav {
+    display: flex;
+    /* gap: 0 100px; */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 20px #3a3939;
+    background: #ffffff;
+    display: none;
+}
+
+.subnav .title {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 600;
+}
+
+.subnav a {
+    margin-top: 15px;
+    display: block;
+    color: #000;
+    font-weight: 600;
+}
+
+.subnav .row-left {
+    width: 30%;
+    padding: 25px;
+}
+
+.subnav .item-2 {
+    margin-top: 40px;
+}
+
+.subnav .part {
+    display: flex;
+    gap: 0 90px;
+}
+
+.part-1 {
+    width: 95px;
+}
+
+.seperate {
+    position: absolute;
+    top: 180px;
+    left: 175px;
+    height: 2px;
+    width: 320px;
+    background: #ddd;
+    rotate: 90deg;
+}
+
+.row-right {
+    width: 70%;
+    padding: 25px 40px;
+}
+
+.subnav .row-right .part {
+    gap: 0 150px;
+}
+
+.subnav a:hover {
+    color: #bdbbbb;
+}
+
+.navbar ul li:hover .subnav,
+.navbar ul li:focus-within .subnav {
+    display: flex;
+}
+
+
