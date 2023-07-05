@@ -14,7 +14,7 @@ img {
 body {
     font-family: "Nunito", sans-serif;
     font-size: 1.6rem;
-    background: #333333cc;
+    background: #333333;
 }
 
 /* Common */
@@ -26,6 +26,8 @@ a {
 img {
     width: 50px;
 }
+
+
 
 .container {
     position: relative;
