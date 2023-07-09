@@ -1,0 +1,168 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    color: #5c5c5c;
+}
+
+/* Common */
+.container {
+    width: 1110px;
+    margin: 30px auto;
+    max-width: calc(100% - 48px);
+}
+
+.heading {
+    font-family: 'Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #000;
+}
+
+.info-desc {
+   text-align: right;
+}
+
+.desc {
+    margin-top: 15px;
+    width: 300px;
+}
+
+.btn {
+    font-weight: 600;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    background: #ddd;
+    border-radius: 999px;
+    padding: 4px 12px;
+    color: #5c5c5c;
+}
+
+.btn:hover {
+    transition-duration: 1s;
+    background: rgba(255, 166, 0, 0.808);
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid rgba(255, 166, 0, 0.808);
+}
+
+
+/* main */
+
+.info {
+    display: flex;
+}
+
+.period {
+    width: 60%;
+}
+
+.period-item {
+    margin-top: 40px;
+    display: flex;
+    gap: 0 10px;
+}
+
+.period-item .circle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #489f91;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: #ddddddd0;
+}
+
+.period-item .circle::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 110px;
+    background: #ddd;
+    top: 25px;
+    left: 6px;
+    transform-origin: 0 0;
+    rotate: 90deg;
+}
+
+.period-item:last-child .circle::after {
+    display: none;
+}
+
+.images {
+    position: relative;
+    margin-top: 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.images .img-right img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.images .img-left img {
+    width: 170px;
+    height: 270px;
+    position: absolute;
+    top: 90px;
+    left: 100px;
+}
+
+.images .img-left {
+    /* position: relative; */
+}
+
+.box {
+    content: "";
+    height: 250px;
+    width: 150px;
+    background: blue;
+    position: absolute;
+    top: 100px;
+    left: 110px;
+}
+
+.box {
+    
+}
+
+.block {
+    margin-top: 150px;
+    margin-left: -170px;
+    width: 300px;
+    text-align: right;
+}
+
+.box span {
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.box .desc {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.2;
+}
+
