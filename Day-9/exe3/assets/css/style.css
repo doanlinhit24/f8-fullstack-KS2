@@ -1,0 +1,139 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Common */
+.container {
+    width: 1000px;
+    margin: 30px auto;
+    max-width: calc(100% - 48px);
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+.desc {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #333333bd;
+    text-align: center;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    padding-left: 24px;
+    padding-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: rgba(0, 0, 255, 0.74);
+}
+
+select {
+    color: #919191;
+    height: 50px;
+    width: 100%;
+    padding-left: 24px;
+    font-size: 1.6rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 24px;
+    padding-top: 20px;
+    border: 2px solid #ddd;
+}
+
+textarea:focus-within,
+textarea:active {
+    border-color: red;
+}
+
+/* main */
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.form-item {
+    margin-top: 20px;
+    position: relative;
+    flex: 1;
+}
+
+label {
+    color: #919191;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    transition: top 0.2s linear;
+}
+
+.form-input:focus ~ label {
+    top: 15px;
+    font-size: 1.2rem;
+}
+
+
+.form-label {
+    position: absolute;
+    top: 60px;
+}
+
+
+.form-textarea {
+    height: 170px;
+}
+
+
+.form-textarea:focus ~ label {
+    font-size: 1.2rem;
+    top: 55px;
+}
+
+
+.btn-form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.btn {
+    margin-top: 40px;
+    padding: 15px 20px;
+    border-radius: 99px;
+    background: rgba(0, 0, 255, 0.74);
+    color: #fff;
+    border: 1px solid rgba(0, 0, 255, 0.74);
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}

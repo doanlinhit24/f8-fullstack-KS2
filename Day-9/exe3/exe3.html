@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Exe3 Day-9</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <h1 class="heading">Drop Us a Line</h1>
+                <p class="desc">
+                    Reach out to us from our contact form and we will get back
+                    to you shortly
+                </p>
+                <form class="form" method="get">
+                    <div class="form-row">
+                        <div class="form-item">
+                            <input
+                                type="text"
+                                class="form-input"
+                                name="first-name"
+                                id="first-name"
+                                required
+                            />
+                            <label for="form-label">First Name*</label>
+                        </div>
+
+                        <div class="form-item">
+                            <input
+                                type="text"
+                                class="form-input"
+                                name="last-name"
+                                id="last-name"
+                            />
+                            <label for="form-label">Last Name*</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-item">
+                            <input
+                                type="text"
+                                class="form-input"
+                                name="email"
+                                id="email"
+                            />
+                            <label for="form-label">Email*</label>
+                        </div>
+
+                        <div class="form-item">
+                            <select name="form-select" id="sales">
+                                <option value="0">Sales</option>
+                                <option value="1">Marketing</option>
+                                <option value="2">Support</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-item">
+                            <textarea
+                                class="form-textarea"
+                                id="message"
+                                name="message"
+                                cols="30"
+                                rows="10"
+                            ></textarea>
+                            <label for="message" class="form-label"
+                                >Message*</label
+                            >
+                        </div>
+                    </div>
+                    <div class="btn-form">
+                        <button class="btn">Send message</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
