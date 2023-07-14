@@ -1,0 +1,134 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.icon {
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.icon a:nth-child(2) {
+    display: none;
+}
+
+.page-front {
+    height: 100%;
+    background: #45CFDD;
+}
+
+.page-front .info {
+    height: 100%;
+    width: 1110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-front .info .title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: right;
+
+}
+
+.page-front .info .desc {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: right;
+
+}
+
+.page-front .info .desc span {
+    font-size: 2.5rem;
+}
+
+
+
+
+/* .container .icon:focus-within .icon a:nth-child(1) {
+    display: none;
+}
+
+.container .icon:focus-within .icon a:nth-child(2) {
+    display: block;
+} */
+
+/* page-behind */ 
+
+.page-behind {
+    margin-top: 20px;
+    /* height: calc(100vh - 20px); */
+    width: 100vw;
+    background: #fff;
+    display: none;
+}
+
+.page-behind .menu {
+    width: 180px;
+}
+
+.page-behind ul li {
+    margin-top: 10px;
+}
+
+.page-behind ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 40px;
+    text-decoration: none;
+    color: #4587dd;
+    font-weight: 500;
+}
+
+.page-behind ul li a:hover {
+    background: #ddd;
+    color: #333;
+}
+
+.page-behind ul {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.menu {
+
+}
+
+.container .icon:focus-within ~ .page-front {
+    display: none;
+}
+
+.container .icon:focus-within ~ .page-behind {
+    display: block;
+}

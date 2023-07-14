@@ -55,6 +55,7 @@ img {
     background: #00000080;
     display: none;
 }
+
 .container .icon:focus-within ~ .cart,
 .container .icon:focus-within ~ .cart .cart-left {
     display: block;
