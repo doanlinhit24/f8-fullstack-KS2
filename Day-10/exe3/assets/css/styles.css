@@ -128,20 +128,20 @@ body {
     background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
-.letter-container:hover .letter-inner {
+.container:hover .letter-inner {
     transform: translateY(50px);
 }
 
-.letter-container:hover .letter-inner .top-fold {
+.container:hover .letter-inner .top-fold {
     transition: transform 0.4s, z-index 0.2s;
     transform: rotateX(180deg);
     z-index: 0;
 }
 
-.letter-container:hover .letter-inner .letter {
+.container:hover .letter-inner .letter {
     height: 180px;
 }
 
-.letter-container:hover .shadow {
+.container:hover .shadow {
     width: 250px;
 }
