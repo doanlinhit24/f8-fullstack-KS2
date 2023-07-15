@@ -2,6 +2,10 @@ html {
     font-size: 62.5%;
 }
 
+:root {
+    --primary-color: #45CFDD;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -12,123 +16,114 @@ body {
     
 }
 
-.container {
-    position: relative;
-    height: 100vh;
-    
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+a {
+    text-decoration: none;
 }
 
-.icon {
-    position: absolute;
-    left: -50px;
-    top: -50px;
-    width: 100px;
-    height: 100px;
-    background: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-
-.icon a:nth-child(2) {
+input {
     display: none;
+}
+
+.container {
+    background: var(--primary-color);
+    height: 100vh;
+    position: relative;
 }
 
 .page-front {
-    height: 100%;
-    background: #45CFDD;
+    position: absolute;
+    top: 50%;
+    right: 10%;
 }
 
-.page-front .info {
-    height: 100%;
-    width: 1110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.page-front .info .title {
-    font-size: 3rem;
+.page-front .title {
+    font-size: 4rem;
     font-weight: 600;
     color: #fff;
-    text-align: right;
-
 }
 
-.page-front .info .desc {
+
+.page-front .desc {
     margin-top: 20px;
+    font-size: 2rem;
     color: #fff;
-    font-size: 1.8rem;
-    text-align: right;
-
 }
 
-.page-front .info .desc span {
-    font-size: 2.5rem;
+.page-front .desc span {
+    font-size: 3rem;
 }
-
-
-
-
-/* .container .icon:focus-within .icon a:nth-child(1) {
-    display: none;
-}
-
-.container .icon:focus-within .icon a:nth-child(2) {
-    display: block;
-} */
-
-/* page-behind */ 
 
 .page-behind {
-    margin-top: 20px;
-    /* height: calc(100vh - 20px); */
-    width: 100vw;
+    width: 100px;
+    height: 100px;
     background: #fff;
-    display: none;
+    color: var(--primary-color);
+    border-bottom-right-radius: 99px;
+    transition: all 0.2s ease;
 }
+
+.icon {
+    display: inline-block;
+    padding: 15px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.icon-menu {
+    position: relative;
+}
+
+.icon-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden; 
+    opacity: 0;
+    /* display: none; */
+    transition: all 0.2s ease;
+}
+
+input:checked + .page-behind {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+input:checked + .page-behind .icon-menu {
+    visibility: hidden;
+}
+
+input:checked + .page-behind .icon-arrow {
+    visibility: visible;
+    opacity: 1;
+    rotate: 180deg;
+}
+
 
 .page-behind .menu {
-    width: 180px;
+    display: none;
+    margin-top: 20px;
+    /* margin-top: 100px; */
+    /* width: 150px; */
 }
 
-.page-behind ul li {
-    margin-top: 10px;
+input:checked + .page-behind .menu {
+    display: block;
 }
 
-.page-behind ul li a {
+.page-behind .menu li a {
     display: inline-block;
-    width: 100%;
-    padding: 5px 40px;
-    text-decoration: none;
-    color: #4587dd;
+    padding: 10px 20px;
+    /* background: red; */
+    width: 150px;
+    color: #45CFDD;
     font-weight: 500;
 }
 
-.page-behind ul li a:hover {
-    background: #ddd;
+.page-behind .menu li a:hover,
+.page-behind .menu li a:focus {
     color: #333;
+    background: #ddd;
 }
 
-.page-behind ul {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-}
 
-.menu {
-
-}
-
-.container .icon:focus-within ~ .page-front {
-    display: none;
-}
-
-.container .icon:focus-within ~ .page-behind {
-    display: block;
-}
