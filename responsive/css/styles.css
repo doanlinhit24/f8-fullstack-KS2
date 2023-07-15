@@ -125,10 +125,6 @@ input {
     input:checked ~ .navbar {
         display: block;
     }
-
-    .header:focus .navbar {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 576px) {
