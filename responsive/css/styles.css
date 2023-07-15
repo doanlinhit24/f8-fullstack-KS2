@@ -1,0 +1,139 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    background-image: url(https://images.unsplash.com/photo-1620246017440-5680ccad777c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=332&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 12px 40px;
+    border-radius: 999px;
+    border: 1px solid #45cfdd;
+    background: #45cfdd;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon {
+    color: #45cfdd;
+    font-size: 1.2rem;
+}
+
+/* Header */
+
+.header {
+    position: relative;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}
+
+.navbar ul > li > a {
+    display: inline-block;
+    padding: 10px 5px;
+    color: #333;
+}
+
+.menu-icon {
+    /* margin-left: auto; */
+    display: none;
+}
+
+.btn-cta {
+    margin-left: auto;
+}
+
+input {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        margin-left: auto;
+    }
+
+    .menu-icon {
+        display: none;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #dddddd80;
+        display: none;
+    }
+
+    .navbar ul > li > a {
+        width: 100px;
+        color: #fff;
+    }
+
+    .navbar ul > li > a:focus {
+        background: red;
+        color: #fff;
+    }
+
+    .navbar ul > li .icon {
+        color: #fff;
+    }
+
+    .navbar ul {
+        width: 55%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 40px;
+        background: #333;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    input:checked ~ .navbar {
+        display: block;
+    }
+
+    .header:focus .navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .btn-cta {
+        display: none;
+    }
+
+}
