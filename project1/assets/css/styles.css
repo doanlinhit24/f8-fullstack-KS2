@@ -59,21 +59,18 @@ input[type="checkbox"] {
 }
 
 
-
 .navbar ul > li {
     margin-top: 10px;
 }
 
 .navbar ul > li > a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     color: var(--letter-color);
-    /* text-align: center; */
-    /* background: red; */
+    
 }
 
-.navbar ul > li:hover > a,
-.navbar ul > li:active > a {
+.navbar ul > li:hover > a {
     color: var(--primary-color);
 }
 
@@ -143,12 +140,6 @@ input[type="checkbox"] {
     .menu-icon {
         display: none;
     }
-
-    /* .header__top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    } */
 
     .header-top {
         width: 100%;
