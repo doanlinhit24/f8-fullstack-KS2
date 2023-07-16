@@ -5,6 +5,8 @@ html {
 :root {
     --primary-color: #f55556;
     --letter-color: #4D4D4D;
+    --font-size-btn: 1.2rem;
+    --font-size-letter: 1.4rem;
 }
 
 * {
@@ -25,6 +27,7 @@ body {
 
 a {
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 input[type="checkbox"] {
@@ -34,10 +37,50 @@ input[type="checkbox"] {
 .container {
     width: 1110px;
     max-width: calc(100% - 48px);
-    margin: 40px auto;
+    margin: 20px auto;
+}
+
+.heading {
+    font-weight: 700;
+}
+
+.lv1 {
+    font-size: 3rem;
+    line-height: 1.8;
+}
+
+.lv2 {
+    font-size: 2.4rem;
+    line-height: 1.7;
+}
+
+.desc {
+    margin-top: 10px;
+    font-size: var(--font-size-letter);
+    color: #676767;
+    line-height: 1.7;
+}
+
+.btn {
+    color: #fff;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    font-size:var(--font-size-btn);
+    max-width: 160px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--primary-color);
 }
 
 /* header */
+
+.header {
+    padding: 20px 0;
+}
+
 /* header-top */
 .header-top {
     display: flex;
@@ -58,24 +101,35 @@ input[type="checkbox"] {
     display: none;
 }
 
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .navbar ul > li {
-    margin-top: 10px;
+    padding: 10px 12px;
 }
 
 .navbar ul > li > a {
-    display: inline-block;
-    padding: 10px 30px;
+    display: block;
+    padding: 10px 20px;
+    font-size: var(--font-size-letter);
+    font-weight: 500;
     color: var(--letter-color);
+    transition: color 0.1s linear;
     
 }
 
-.navbar ul > li:hover > a {
+.navbar ul > li > a:hover,
+.navbar ul > li > a:active {
     color: var(--primary-color);
+    background: transparent;
 }
 
 .action {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     gap: 0 10px;
@@ -90,8 +144,10 @@ input[type="checkbox"] {
 }
 
 .action__input::placeholder {
+    font-family: 'Poppins', sans-serif;
     color: #333;
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .action__input:focus {
@@ -133,6 +189,77 @@ input[type="checkbox"] {
     display: flex;
 }
 
+/* hero */
+
+.hero {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-left .hero__block {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    font-size: 1.4rem;
+    min-width: 200px;
+    padding: 8px 12px;
+    background: #FDECEC;
+    border-radius: 999px;
+}
+
+.hero-left .hero__block .title {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.hero-left .highlight-heading {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.hero__action {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.hero .btn-action {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    color: var(--letter-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+}
+
+.hero .btn-action:hover {
+    color: #333333a9;
+}
+
+.hero .btn {
+    padding:14px 10px;
+}
+
+.hero__button-play {
+    border-radius: 50%;
+    --edge: 50px;
+    width: var(--edge);
+    height: var(--edge);
+    box-shadow: 0 0 12px #ddd;
+}
 
 /* Responsive */
 
@@ -150,7 +277,7 @@ input[type="checkbox"] {
     }
 
     .header-top__navbar {
-        width: 65%;
+        width: 70%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -161,8 +288,18 @@ input[type="checkbox"] {
         margin-top: 0;
     }
 
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
     .navbar ul > li {
-        margin-top: 0;
+        padding: 0 0;
+    }
+
+    .navbar ul > li > a {
+        --font-size-letter: 1.6rem;
     }
 
     .navbar ul {
@@ -170,5 +307,58 @@ input[type="checkbox"] {
         /* flex-direction: row; */
         /* line-height: 46px; */
         align-items: center;
+    }
+
+    /* hero */
+
+    .hero {
+        display: flex;
+        align-items: center;
+        text-align: start;
+    }
+
+
+    .hero-left {
+        width: 52%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .hero-left .hero__block {
+        font-size: 1.6rem;
+        padding: 12px 20px;
+    }
+
+    .btn {
+        font-size: 2rem;
+        min-width: 186px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .lv1 {
+        font-size: 4.8rem;
+    }
+
+    .desc {
+        font-size: 1.8rem;
+    }
+
+    .hero .btn {
+        padding: 27px 20px;
+    }
+
+    .hero .btn-action {
+        font-size: 1.6rem;
+    }
+
+    .hero__button-play {
+        --edge: 70px;
+    }
+
+    .hero .image {
+        width: 48%;
     }
 }
