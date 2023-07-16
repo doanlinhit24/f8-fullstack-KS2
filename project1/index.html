@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project-1 F8 Offline</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Embed font awesome -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Embed Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Embed CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>Project-1 F8 Offline</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <input type="checkbox" id="menu-mobile" />
+                    <img src="./assets/img/logo.svg" alt="logo" class="logo" />
+                    <label for="menu-mobile" class="menu-icon">
+                        <i class="header-top__icon fa-solid fa-bars"></i>
+                    </label>
+                    <div class="header-top__navbar">
+                        <nav class="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#!">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Menu</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Service</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Shop</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="action">
+                            <i
+                                class="search-icon fa-solid fa-magnifying-glass"
+                            ></i>
+                            <input type="text" placeholder="Search" class="action__input"/>
+                            <i
+                                class="cart-icon fa-solid fa-basket-shopping"
+                            ></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+    </body>
 </html>
