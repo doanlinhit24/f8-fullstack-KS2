@@ -12,6 +12,7 @@ html {
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -22,6 +23,7 @@ img {
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
+    
 }
 
 /* Common */
@@ -456,10 +458,65 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: 500;
 }
 
+
+
 /* Responsive */
+
+
+@media screen and (min-width: 768px) {
+    /* Common */
+    .lv2 {
+        font-size: 3rem;
+    }
+
+    .desc {
+        font-size: 1.6rem;
+    }
+
+    .hero__action .btn {
+        font-size: 1.6rem;
+        padding: 20px 12px;
+    }
+
+    .service__btn {
+        font-size: 1.6rem;
+        padding: 17px 20px;
+    }
+
+    /* menu */
+    .menu .desc {
+        font-size: 1.6rem;
+    }
+
+    .menu__item .menu__icon {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 40px;
+    } 
+
+    .title {
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+
+    .menu .list-item {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 0 30px;
+    }
+
+    .menu__item {
+        width: 28%;
+        height: 320px;
+    }
+
+    .contact__icon {
+        padding: 10px 60px;
+    }
+}
 
 @media screen and (min-width: 1200px) {
     /* Common */
