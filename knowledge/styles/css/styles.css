@@ -1,0 +1,34 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.news-list {
+  display: flex;
+}
+.news-item {
+  margin: 10px;
+  background: #000;
+}
+.news-item:hover {
+  font-size: 1.6rem;
+}
+.news-item__thumb {
+  width: 100%;
+}
+.news-item__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.news-item__title::before {
+  border-left: 2px solid red;
+}
+.news-item__desc {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,44 @@
+@import '_variables';
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.news {
+    // Local
+    $black-color: #000;
+
+    &-list {
+        display: flex;
+    }
+
+    &-item {
+        margin: 10px;
+        background: $text-color;
+    }
+
+    &-item:hover {
+        font-size: 1.6rem;
+    }
+
+    &-item__thumb {
+        width: 100%;
+    }
+
+    &-item__title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &-item__title::before {
+        border-left: 2px solid red;
+    }
+
+    &-item__desc {
+        font-size: 16px;
+        font-style: italic;
+    }
+}

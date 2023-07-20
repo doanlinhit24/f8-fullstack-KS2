@@ -1,0 +1,33 @@
+@import 'mixins';
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    @include grid(3, 10px);
+    background: #ccc;
+
+    .item {
+        background: orange;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+.list {
+    margin-top: 20px;
+    @include grid(3, 10px);
+    background: red;
+
+    .list-item {
+        background: green;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+.news-list {
+
+}

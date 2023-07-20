@@ -1,0 +1,135 @@
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.6rem;
+    background-image: url(https://hoanganf8.github.io/htmlcss_project02/image/landing-background.jpg);
+    background-repeat: no-repeat;
+}
+
+// Common
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: none;
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+    max-width: calc(100% - 48px);
+}
+
+.heading {
+    color: #fff;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.lv2 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    // line-height: 1.2;
+}
+
+.lv1 {
+    font-size: 9rem;
+    font-weight: 900;
+    // line-height: 1.4;
+}
+
+input {
+    // display: none;
+}
+
+// main
+.landing {
+    &__info {
+        padding: 10px 0;
+        text-align: center;
+        // position: relative;
+    }
+
+    &__info__logo {
+        // position: absolute;
+        margin: 15px auto;
+        width: 90px;
+        height: 90px;
+    }
+
+    &__tab-switch {
+        width: 55%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 12px #ddd;
+        text-align: center;
+    }
+
+    &__tab-switch a {
+        color: #fff;
+        padding: 15px 30px;
+    }
+
+    &__tab-switch__login {
+        width: 50%;
+        padding: 15px 5px;
+        font-weight: 700;
+        // background: red;
+        cursor: pointer;
+    }
+
+    &__tab-switch__register {
+        width: 50%;
+        padding: 15px 5px;
+        font-weight: 700;
+        cursor: pointer;
+        // background: green;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    .active {
+        background: #fff;
+    }
+
+    .active a {
+        // background: #fff;
+        color: #333;
+    }
+
+    &__input-register:checked ~ &__tab-switch__login {
+        background: transparent;
+    }
+
+    &__input-register:checked ~ &__tab-switch__register {
+        background: #fff;
+    }
+
+    &__input-register:checked ~ &__tab-switch__register a {
+        color: #333;
+    }
+
+    &__input-login:checked ~ &__tab-switch__register {
+        background: transparent;
+    }
+
+    &__input-login:checked ~ &__tab-switch__login a {
+        color: #333;
+    }
+
+    &__input-login:checked ~ &__tab-switch__login {
+        background: #fff;
+    }
+}

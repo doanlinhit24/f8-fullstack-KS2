@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  background: #ccc;
+}
+.container > * {
+  width: calc(33.3333333333% - 10px);
+  margin-left: 10px;
+}
+.container .item {
+  background: orange;
+  text-align: center;
+  padding: 20px;
+}
+
+.list {
+  margin-top: 20px;
+  display: flex;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  background: red;
+}
+.list > * {
+  width: calc(33.3333333333% - 10px);
+  margin-left: 10px;
+}
+.list .list-item {
+  background: green;
+  text-align: center;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=ex04.css.map */

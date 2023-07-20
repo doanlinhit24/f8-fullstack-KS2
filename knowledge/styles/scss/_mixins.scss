@@ -1,0 +1,77 @@
+// @mixin size {
+//     width: 100px;
+//     height: 200px;
+// }
+
+// @mixin size($width, $height) {
+//     width: $width;
+//     height: $height;
+// }
+// default
+// @mixin size($width: 150px, $height: 150px ) {
+//     width: $width;
+//     height: $height;
+// }
+
+// @mixin rounded($tl, $tr: $tl, $br: $tl, $bl: $tl) {
+//     border-radius: $tl $tr $br $bl;
+// }
+
+// @mixin rounded($value) {
+//     border-radius: $value;
+// }
+
+@mixin grid($col, $space) {
+    display: flex;
+    row-gap: $space;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * $space);
+
+    > * {
+        width: calc(100% / $col - $space);
+        margin-left: $space;
+    }
+}
+
+@mixin screen($device) {
+    @if $device == mobile {
+        @media screen and (max-width: 575px) {
+            @content;
+        }
+    }
+
+    @if $device == tablet {
+        @media screen and (max-width: 576px) and (max-width: 991) {
+            @content;
+        }
+    }
+
+    @if $device == desktop {
+        @media screen and (min-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+@mixin moveCenter($type) {
+    @if $type == display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @if $type == margin {
+        margin: 0 auto;
+    }
+
+    @if $type == text {
+        text-align: center;
+    }
+    @if $type == position {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+    }
+    
+}
