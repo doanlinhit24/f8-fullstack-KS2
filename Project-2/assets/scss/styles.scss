@@ -44,7 +44,7 @@ a {
 }
 
 input {
-    // display: none;
+    display: none;
 }
 
 // main
@@ -102,11 +102,15 @@ input {
 
     .active {
         background: #fff;
+        color: #333;
     }
 
-    .active a {
-        // background: #fff;
-        color: #333;
+    label {
+        padding: 10px 20px;
+    }
+
+    &__tab-switch__register label {
+        color: #fff;
     }
 
     &__input-register:checked ~ &__tab-switch__login {
@@ -117,19 +121,7 @@ input {
         background: #fff;
     }
 
-    &__input-register:checked ~ &__tab-switch__register a {
+    &__input-register:checked ~ &__tab-switch__register label {
         color: #333;
-    }
-
-    &__input-login:checked ~ &__tab-switch__register {
-        background: transparent;
-    }
-
-    &__input-login:checked ~ &__tab-switch__login a {
-        color: #333;
-    }
-
-    &__input-login:checked ~ &__tab-switch__login {
-        background: #fff;
     }
 }

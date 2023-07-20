@@ -40,6 +40,10 @@ a {
   font-weight: 900;
 }
 
+input {
+  display: none;
+}
+
 .landing__info {
   padding: 10px 0;
   text-align: center;
@@ -81,9 +85,13 @@ a {
 }
 .landing .active {
   background: #fff;
-}
-.landing .active a {
   color: #333;
+}
+.landing label {
+  padding: 10px 20px;
+}
+.landing__tab-switch__register label {
+  color: #fff;
 }
 .landing__input-register:checked ~ .landing__tab-switch__login {
   background: transparent;
@@ -91,17 +99,8 @@ a {
 .landing__input-register:checked ~ .landing__tab-switch__register {
   background: #fff;
 }
-.landing__input-register:checked ~ .landing__tab-switch__register a {
+.landing__input-register:checked ~ .landing__tab-switch__register label {
   color: #333;
-}
-.landing__input-login:checked ~ .landing__tab-switch__register {
-  background: transparent;
-}
-.landing__input-login:checked ~ .landing__tab-switch__login a {
-  color: #333;
-}
-.landing__input-login:checked ~ .landing__tab-switch__login {
-  background: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
