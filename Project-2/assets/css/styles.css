@@ -2,6 +2,10 @@ html {
   font-size: 62.5%;
 }
 
+:root {
+  --letter-color: #3e3f5e;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -20,7 +24,7 @@ a {
 }
 
 .container {
-  width: 90%;
+  width: 95%;
   margin: 30px auto;
   max-width: calc(100% - 48px);
 }
@@ -36,12 +40,37 @@ a {
 }
 
 .lv1 {
-  font-size: 9rem;
+  font-size: 6.5rem;
   font-weight: 900;
 }
 
-input {
+.lv3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+input[type=checkbox] {
   display: none;
+}
+
+input[type=text] {
+  width: 180px;
+  padding: 10px;
+  outline: none;
+}
+
+.btn {
+  font-family: "Rajdhani", sans-serif;
+  margin: 30px auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+  width: 252px;
+  padding: 17px 15px;
+  cursor: pointer;
+  border-radius: 12px;
+  -webkit-tap-highlight-color: none;
 }
 
 .landing__info {
@@ -54,7 +83,7 @@ input {
   height: 90px;
 }
 .landing__tab-switch {
-  width: 55%;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -66,17 +95,15 @@ input {
 }
 .landing__tab-switch a {
   color: #fff;
-  padding: 15px 30px;
 }
 .landing__tab-switch__login {
   width: 50%;
-  padding: 15px 5px;
+  padding: 0px 5px;
   font-weight: 700;
   cursor: pointer;
 }
 .landing__tab-switch__register {
   width: 50%;
-  padding: 15px 5px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -88,7 +115,8 @@ input {
   color: #333;
 }
 .landing label {
-  padding: 10px 20px;
+  display: block;
+  padding: 17px 20px;
 }
 .landing__tab-switch__register label {
   color: #fff;
@@ -101,6 +129,228 @@ input {
 }
 .landing__input-register:checked ~ .landing__tab-switch__register label {
   color: #333;
+}
+.landing .lv3 {
+  font-family: Rajdhani, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--letter-color);
+  margin-bottom: 30px;
+}
+.landing__login {
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  translate: -50% 0;
+  padding: 40px 10px;
+  background: #fff;
+  color: #adafca;
+  font-weight: 600;
+  border-radius: 12px;
+}
+.landing__login label {
+  position: relative;
+}
+.landing__login input {
+  width: 220px;
+  height: 45px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  border-radius: 12px;
+  outline: none;
+}
+.landing__login .placeholder {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  translate: 0 -50%;
+  transition: all 0.4s ease;
+}
+.landing__login input:focus + .placeholder {
+  top: 17px;
+  translate: 0 -50%;
+  font-size: 1.2rem;
+  color: #adadad;
+  font-weight: 600;
+  padding: 0 5px;
+  background: #fff;
+}
+.landing__login input:focus {
+  border: 1px solid #007bff;
+}
+.landing__login input:valid {
+  border: 1px solid rgba(0, 128, 0, 0.808);
+}
+.landing__login__help__remember {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.landing__login__remember__box {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #adafca;
+  cursor: pointer;
+  background: #007bff;
+}
+.landing__login .icon-exit {
+  color: #fff;
+}
+#icon-box:checked ~ .landing__login__remember__box {
+  background: #fff;
+}
+.landing__login__help {
+  margin-top: 5px;
+  padding: 0 20px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing__login__btn {
+  background: #615dfa;
+  border: 1px solid #615dfa;
+}
+.landing__login__seperate {
+  position: relative;
+  margin: 0 auto;
+  width: 85%;
+  height: 1px;
+  background: #ccc;
+}
+.landing__login__other {
+  position: absolute;
+  top: -7px;
+  left: 25px;
+  background: #fff;
+  color: var(--letter-color);
+  font-weight: 700;
+}
+.landing__login__group-icon {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 15px;
+}
+.landing__login__icon {
+  display: inline-block;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: #615dfa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+}
+.landing__login__icon:nth-child(2) {
+  background: #1abcff;
+}
+.landing__login__icon:nth-child(3) {
+  background: #7b5dfa;
+}
+.landing__login__icon:nth-child(3) {
+  background: #fd434f;
+}
+.landing__login__icon:hover {
+  transform: translateY(-20%);
+}
+.landing__register {
+  display: none;
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  translate: -50% 0;
+  padding: 40px 10px;
+  background: #fff;
+  color: #adafca;
+  font-weight: 600;
+  border-radius: 12px;
+}
+.landing__register label {
+  position: relative;
+}
+.landing__register input {
+  width: 220px;
+  height: 45px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  border-radius: 12px;
+  outline: none;
+}
+.landing__register .placeholder {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  translate: 0 -50%;
+  transition: all 0.4s ease;
+}
+.landing__register input:focus + .placeholder {
+  top: 17px;
+  translate: 0 -50%;
+  font-size: 1.2rem;
+  color: #adadad;
+  font-weight: 600;
+  padding: 0 5px;
+  background: #fff;
+}
+.landing__register input:focus {
+  border: 1px solid #007bff;
+}
+.landing__register input:valid {
+  border: 1px solid rgba(0, 128, 0, 0.808);
+}
+.landing__register__help__remember {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.landing__register__remember__box {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #adafca;
+  cursor: pointer;
+  background: #007bff;
+}
+.landing__register .icon-exit {
+  color: #fff;
+}
+#icon-register-box:checked ~ .landing__register__remember__box {
+  background: #fff;
+}
+.landing__register__help {
+  margin-top: 5px;
+  padding: 0 20px;
+  font-size: 1.4rem;
+}
+.landing__register__btn {
+  background: #23d2e2;
+  border: 1px solid #23d2e2;
+}
+.landing__register__text {
+  color: var(--letter-color);
+  text-align: left;
+  padding: 5px 20px;
+  font-weight: 500;
+}
+.landing__register__text .contact {
+  color: #23d2e2;
+}
+.landing__input-register:checked ~ .landing__register {
+  display: block;
+}
+.landing__input-register:checked ~ .landing__login {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
