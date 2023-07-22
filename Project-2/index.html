@@ -28,12 +28,17 @@
         <!-- Embed CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
-        <title>Project-2 F8-Offline</title>
+        <title>Vikinger</title>
     </head>
     <body>
         <main>
             <section class="landing">
                 <div class="container">
+                    <input
+                        type="checkbox"
+                        id="register"
+                        class="landing__input-register"
+                    />
                     <div class="landing__info">
                         <div class="landing__info__logo">
                             <img src="./assets/img/logo.svg" alt="" />
@@ -44,17 +49,23 @@
                         <h1 class="landing__info__heading--lv1 heading lv1">
                             VIKINGER
                         </h1>
+                        <p class="landing__info__desc__lap">
+                            The next generation social network & community!
+                            Connect with your friends and play with our quests
+                            and badges gamification system!
+                        </p>
+                        <div class="landing__tab-switch">
+                            <div class="landing__tab-switch__login active">
+                                <label for="register">Log in</label>
+                            </div>
+
+                            <div class="landing__tab-switch__register">
+                                <label for="register">Register </label>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="landing__tab-switch">
-                        <input
-                            type="checkbox"
-                            id="register"
-                            class="landing__input-register"
-                        />
-                        <div class="landing__tab-switch__login active">
-                            <label for="register">Log in</label>
-                        </div>
+                    <div class="landing__action">
                         <form class="landing__login">
                             <h3 class="heading lv3">Account Login</h3>
                             <label>
@@ -131,9 +142,7 @@
                                 </a>
                             </div>
                         </form>
-                        <div class="landing__tab-switch__register">
-                            <label for="register">Register </label>
-                        </div>
+
                         <form class="landing__register">
                             <h3 class="heading lv3">Create your Account!</h3>
                             <label>

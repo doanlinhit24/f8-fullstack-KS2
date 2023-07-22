@@ -2,6 +2,10 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --letter-color: #3e3f5e;
 }
@@ -73,6 +77,10 @@ input[type=text] {
   -webkit-tap-highlight-color: none;
 }
 
+.landing__info__desc__lap {
+  display: none;
+}
+
 .landing__info {
   padding: 10px 0;
   text-align: center;
@@ -121,13 +129,13 @@ input[type=text] {
 .landing__tab-switch__register label {
   color: #fff;
 }
-.landing__input-register:checked ~ .landing__tab-switch__login {
+.landing__input-register:checked ~ .landing__info .landing__tab-switch__login {
   background: transparent;
 }
-.landing__input-register:checked ~ .landing__tab-switch__register {
+.landing__input-register:checked ~ .landing__info .landing__tab-switch__register {
   background: #fff;
 }
-.landing__input-register:checked ~ .landing__tab-switch__register label {
+.landing__input-register:checked ~ .landing__info .landing__tab-switch__register label {
   color: #333;
 }
 .landing .lv3 {
@@ -147,6 +155,7 @@ input[type=text] {
   color: #adafca;
   font-weight: 600;
   border-radius: 12px;
+  text-align: center;
 }
 .landing__login label {
   position: relative;
@@ -272,6 +281,7 @@ input[type=text] {
   color: #adafca;
   font-weight: 600;
   border-radius: 12px;
+  text-align: center;
 }
 .landing__register label {
   position: relative;
@@ -338,6 +348,7 @@ input[type=text] {
   border: 1px solid #23d2e2;
 }
 .landing__register__text {
+  width: 252px;
   color: var(--letter-color);
   text-align: left;
   padding: 5px 20px;
@@ -346,11 +357,323 @@ input[type=text] {
 .landing__register__text .contact {
   color: #23d2e2;
 }
-.landing__input-register:checked ~ .landing__register {
+.landing__input-register:checked ~ .landing__action .landing__register {
   display: block;
 }
-.landing__input-register:checked ~ .landing__login {
+.landing__input-register:checked ~ .landing__action .landing__login {
   display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .lv1 {
+    font-size: 11rem;
+  }
+  .landing__tab-switch {
+    width: 65%;
+    margin-top: 40px;
+  }
+  .landing__action {
+    margin-top: 40px;
+    position: relative;
+    height: 650px;
+    margin-left: auto;
+  }
+  .landing__login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 50px 20px;
+    height: 100%;
+    width: 95%;
+  }
+  .landing__login label {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .landing__login input {
+    width: 100%;
+    height: 55px;
+  }
+  .landing__login__remember__box label {
+    padding: 0;
+  }
+  .landing__login__seperate {
+    width: calc(100% - 40px);
+  }
+  .landing__login__other {
+    width: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .landing__login .btn {
+    width: calc(100% - 40px);
+  }
+  .landing__register {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 35px 20px;
+    height: 100%;
+    width: 95%;
+  }
+  .landing__register label {
+    width: 100%;
+  }
+  .landing__register input {
+    width: 100%;
+    height: 50px;
+  }
+  .landing__register__remember__box label {
+    padding: 0;
+  }
+  .landing__register .btn {
+    width: calc(100% - 40px);
+  }
+  .landing__register__text {
+    width: 100%;
+    line-height: 1.2;
+  }
+  .landing__input-register:checked ~ .landing__action .landing__register {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lv1 {
+    font-size: 11rem;
+  }
+  .landing__tab-switch {
+    width: 65%;
+    margin-top: 40px;
+  }
+  .landing__action {
+    margin-top: 40px;
+    position: relative;
+    height: 650px;
+    margin-left: auto;
+  }
+  .landing__login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 50px 20px;
+    height: 100%;
+    width: 70%;
+  }
+  .landing__login label {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .landing__login input {
+    width: 100%;
+    height: 55px;
+  }
+  .landing__login__remember__box label {
+    padding: 0;
+  }
+  .landing__login__seperate {
+    width: calc(100% - 40px);
+  }
+  .landing__login__other {
+    width: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .landing__login .btn {
+    width: calc(100% - 40px);
+  }
+  .landing__register {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 35px 20px;
+    height: 100%;
+    width: 70%;
+  }
+  .landing__register label {
+    width: 100%;
+  }
+  .landing__register input {
+    width: 100%;
+    height: 50px;
+  }
+  .landing__register__remember__box label {
+    padding: 0;
+  }
+  .landing__register .btn {
+    width: calc(100% - 40px);
+  }
+  .landing__register__text {
+    width: 100%;
+    line-height: 1.2;
+  }
+  .landing__input-register:checked ~ .landing__action .landing__register {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lv1 {
+    font-size: 11rem;
+  }
+  .landing__tab-switch {
+    width: 50%;
+    margin-top: 40px;
+  }
+  .landing__action {
+    margin-top: 40px;
+    position: relative;
+    height: 650px;
+    margin-left: auto;
+  }
+  .landing__login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 50px 20px;
+    height: 100%;
+    width: 55%;
+  }
+  .landing__login label {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .landing__login input {
+    width: 100%;
+    height: 55px;
+  }
+  .landing__login__remember__box label {
+    padding: 0;
+  }
+  .landing__login__seperate {
+    width: calc(100% - 40px);
+  }
+  .landing__login__other {
+    width: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .landing__login .btn {
+    width: calc(100% - 40px);
+  }
+  .landing__register {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 35px 20px;
+    height: 100%;
+    width: 55%;
+  }
+  .landing__register label {
+    width: 100%;
+  }
+  .landing__register input {
+    width: 100%;
+    height: 50px;
+  }
+  .landing__register__remember__box label {
+    padding: 0;
+  }
+  .landing__register .btn {
+    width: calc(100% - 40px);
+  }
+  .landing__register__text {
+    width: 100%;
+    line-height: 1.2;
+  }
+  .landing__input-register:checked ~ .landing__action .landing__register {
+    display: block;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .landing__info__desc__lap {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    color: #fff;
+    font-weight: 500;
+  }
+  .container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  .lv1 {
+    font-size: 10rem;
+  }
+  .landing__info {
+    width: 50%;
+  }
+  .landing__tab-switch {
+    width: 50%;
+    margin-top: 40px;
+  }
+  .landing__action {
+    position: relative;
+    width: 50%;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .landing__login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 50px 20px;
+    height: 100%;
+    width: 65%;
+  }
+  .landing__login label {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .landing__login input {
+    width: 100%;
+    height: 55px;
+  }
+  .landing__login__remember__box label {
+    padding: 0;
+  }
+  .landing__login__seperate {
+    width: calc(100% - 40px);
+  }
+  .landing__login__other {
+    width: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .landing__login .btn {
+    width: calc(100% - 40px);
+  }
+  .landing__register {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 20px;
+    height: 100%;
+    width: 65%;
+  }
+  .landing__register label {
+    width: 100%;
+  }
+  .landing__register input {
+    width: 100%;
+    height: 50px;
+  }
+  .landing__register__remember__box label {
+    padding: 0;
+  }
+  .landing__register .btn {
+    width: calc(100% - 40px);
+  }
+  .landing__register__text {
+    width: 100%;
+    line-height: 1.2;
+  }
+  .landing__input-register:checked ~ .landing__action .landing__register {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
