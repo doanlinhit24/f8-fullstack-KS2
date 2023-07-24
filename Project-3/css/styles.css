@@ -330,7 +330,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: #ccc;
+    background: #fff;
     width: 20%;
     padding: 54px 20px 0 58px;
     height: 100%;
@@ -341,7 +341,12 @@ body {
     top: 0;
     right: 0;
     height: 100%;
+    width: 80%;
     z-index: 1;
+  }
+  .sidebar .nav-item {
+    font-size: 2rem;
+    margin-top: 10px;
   }
   .sidebar .chat-btn {
     margin-left: -10px;
@@ -356,45 +361,57 @@ body {
     grid-template-areas: " header header header header" " main main main main" " main main main main" " main main main main" " main main main main";
   }
   #sidebar-menu:checked ~ .sidebar {
-    display: flex;
-  }
-  #sidebar-menu:not(:checked) ~ .sidebar {
-    display: none;
+    display: block;
   }
   .header .icon-menu {
     display: flex;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 991px) {
+@media screen and (min-width: 370px) and (max-width: 991px) {
   .wrapper {
+    display: block;
     position: relative;
   }
   .sidebar {
     position: absolute;
-    background: #ccc;
+    background: rgba(204, 204, 204, 0.6980392157);
     top: 0;
     left: 0;
     height: 100%;
-    padding-right: 70px;
+    padding-right: 30px;
+    width: 100%;
+    z-index: 1;
     display: none;
+  }
+  .sidebar .sidebar-main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 20%;
+    padding: 54px 20px 0 58px;
+    height: 100%;
+  }
+  .sidebar .toggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80%;
+    z-index: 1;
+  }
+  .sidebar .nav-item {
+    font-size: 2rem;
+    margin-top: 10px;
   }
   .sidebar .chat-btn {
     margin-left: -10px;
   }
-  .wrapper-inner {
-    width: 900px;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: " header header header header" " main main main main" " main main main main" " main main main main" " main main main main";
-  }
   #sidebar-menu:checked ~ .sidebar {
     display: flex;
-  }
-  #sidebar-menu:not(:checked) ~ .sidebar {
-    display: none;
   }
   .header .icon-menu {
     display: flex;
