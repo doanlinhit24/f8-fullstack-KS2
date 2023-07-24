@@ -281,8 +281,11 @@ body {
 
 @media screen and (min-width: 370px) and (max-width: 991px) {
     .wrapper {
-        display: block;
         position: relative;
+    }
+
+    .sidebar {
+        display: none;
     }
 
     .sidebar {
@@ -302,8 +305,8 @@ body {
             top: 0;
             left: 0;
             background: #fff;
-            width: 20%;
-            padding: 54px 20px 0 58px;
+            width: 30%;
+            padding: 54px 70px 0 25px;
             height: 100%;
         }
 
@@ -313,12 +316,12 @@ body {
             top: 0;
             right: 0;
             height: 100%;
-            width: 80%;
+            width: 60%;
             z-index: 1;
         }
 
         .nav-item {
-            font-size: 2rem;
+            font-size: 1.6rem;
             margin-top: 10px;
         }
 
@@ -327,28 +330,45 @@ body {
         }
     }
 
-    // .wrapper-inner {
-    //     width: 450px;
-    //     margin: 0 auto;
-    //     grid-template-columns: 1fr 1fr 1fr 1fr;
-    //     grid-template-rows: auto 1fr 1fr 1fr 1fr;
-    //     gap: 0px 0px;
-    //     grid-auto-flow: row;
-    //     grid-template-areas:
-    //         " header header header header"
-    //         " main main main main"
-    //         " main main main main"
-    //         " main main main main"
-    //         " main main main main";
-    // }
+    .wrapper-inner {
+        // width: 450px;
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "main main"
+            "main main"
+            "main main";
+    }
+
+    .main {
+        grid-template-columns: 1fr 1fr;
+    }
 
     #sidebar-menu:checked ~ .sidebar {
         display: flex;
+        // width: 25%;
     }
 
+    // .header {
+    //     display: none;
+    // }
     .header {
         .icon-menu {
-            display: flex;
+            display: block;
+        }
+
+        .nav {
+            display: none;
+        }
+
+        input {
+            display: none;
         }
     }
 }
