@@ -285,19 +285,16 @@ body {
     }
 
     .sidebar {
-        display: none;
-    }
-
-    .sidebar {
         position: absolute;
         background: #ccccccb2;
         top: 0;
-        left: 0;
         height: 100%;
-        padding-right: 30px;
         width: 100%;
         z-index: 1;
-        display: none;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        // display: none;
         .sidebar-main {
             display: flex;
             flex-direction: column;
@@ -351,8 +348,7 @@ body {
     }
 
     #sidebar-menu:checked ~ .sidebar {
-        display: flex;
-        // width: 25%;
+        transform: translateX(0);
     }
 
     // .header {

@@ -372,18 +372,15 @@ body {
     position: relative;
   }
   .sidebar {
-    display: none;
-  }
-  .sidebar {
     position: absolute;
     background: rgba(204, 204, 204, 0.6980392157);
     top: 0;
-    left: 0;
     height: 100%;
-    padding-right: 30px;
     width: 100%;
     z-index: 1;
-    display: none;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
   }
   .sidebar .sidebar-main {
     display: flex;
@@ -425,7 +422,7 @@ body {
     grid-template-columns: 1fr 1fr;
   }
   #sidebar-menu:checked ~ .sidebar {
-    display: flex;
+    transform: translateX(0);
   }
   .header .icon-menu {
     display: block;
