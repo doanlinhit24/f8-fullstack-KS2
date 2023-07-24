@@ -1,0 +1,31 @@
+$footerCopyright: ".copyright";
+$size: 10;
+$property: color;
+
+.footer {
+    padding: 10px 0;
+    #{$footerCopyright} {
+        text-align: center;
+        #{$property}: grey;
+        font-size: $size + 0%;
+        font-size: $size + px;
+    }
+}
+
+$prefix: "col-";
+$breakpoint: "";
+$number: 0;
+
+$selector: "";
+
+@if $breakpoint != "" and $number > 0 {
+    $selector: $prefix + $breakpoint + "-" + $number;
+} @else if $number > 0 {
+    $selector: $prefix;
+} @else {
+    $selector: $prefix;
+}
+
+#{$prefix + $number} {
+    width: 50%;
+}
