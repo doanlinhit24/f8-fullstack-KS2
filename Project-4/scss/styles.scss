@@ -1,0 +1,55 @@
+@import "parts/reset";
+@import "parts/variable";
+@import "parts/mixins";
+@import "parts/base";
+@import "layouts/header";
+@import "layouts/footer";
+
+html {
+    font-size: 10px;
+}
+
+input,
+textarea,
+button,
+select {
+    border: 0;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-size: $font-size;
+    line-height: 1.2;
+    color: $text-color;
+    font-family: $font;
+}
+
+a {
+    text-decoration: none;
+    color: $linkColor;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 6.8rem;
+}
+
+h2 {
+    font-size: 5.2rem;
+}
+
+h3 {
+    font-size: 3.8rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+.container {
+}

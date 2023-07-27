@@ -1,0 +1,81 @@
+@import "./parts/base";
+@import "./parts/variable";
+@import "./parts/mixins";
+@import "./parts/reset";
+@import "./parts/font";
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+textarea,
+input,
+button,
+select {
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: $font;
+    font-size: $font-size;
+    color: $text-color;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+// Header
+
+.header {
+    &__wrapper {
+        @include flex;
+    }
+
+    &__logo {
+        margin-right: auto;
+    }
+
+    &__right {
+        @include flex;
+    }
+
+    &__right .nav ul {
+        @include flex;
+    }
+
+    &__right .nav ul a {
+        padding: 8px 24px;
+        // background-color: red;
+    }
+
+    &__icon {
+        @include flex;
+    }
+
+    &__icon .cart-icon {
+        margin-left: 25px;
+    }
+
+    &__icon .search-icon {
+        margin-left: 50px;
+    }
+}

@@ -135,12 +135,10 @@ input {
     #menu-mobile:checked ~ .navbar {
         display: block;
     }
-
 }
 
 @media screen and (max-width: 576px) {
     .btn-cta {
         display: none;
     }
-
 }
